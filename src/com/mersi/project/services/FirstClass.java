@@ -7,5 +7,7 @@ public class FirstClass {
 		int a=1;
 		int b=2;
 		int c;
+		int d;
+		int e;
 	}
 }

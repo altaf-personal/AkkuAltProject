@@ -5,5 +5,6 @@ public class SecondClass {
 SecondClass()
 {
 int a;
+int b;
 }
 }

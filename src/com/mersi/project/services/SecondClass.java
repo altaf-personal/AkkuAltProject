@@ -2,7 +2,7 @@ package com.mersi.project.services;
 
 public class SecondClass {
 	
-PRIVATE void secondClassMethod()
+PRIVATE STATIC void secondClassMethod()
 {
 int b;
 }

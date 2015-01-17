@@ -4,6 +4,7 @@ public class SecondClass {
 	
 SecondClass()
 {
+int k;
 int a;
 int b;
 int c;

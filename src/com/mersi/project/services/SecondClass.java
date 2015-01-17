@@ -5,7 +5,7 @@ public class SecondClass {
 SecondClass()
 {
 int k;
-
+int y;
 
 }
 }

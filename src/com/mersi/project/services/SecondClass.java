@@ -7,5 +7,7 @@ SecondClass()
 int a;
 int c;
 int b;
+int c;
+int d;
 }
 }

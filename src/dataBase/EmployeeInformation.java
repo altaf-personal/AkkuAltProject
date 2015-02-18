@@ -1,4 +1,6 @@
 package dataBase;
+//Package wrong  as previous class
+//Documentation missing as pre
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,11 +10,23 @@ import java.sql.ResultSet;
 //import java.sql.Statement;
 import java.sql.Statement;
 
+//Class documentation missing as previous class.
+//Name the class as 'EmployeeDao' or EmployeeRepository (Dao means Data Access Object - which is a known standard to fetch, save, update database ), that is enough
+//Create another class called Employee and have attributes like name, id, and other details. 
 public class EmployeeInformation {
+	
+	//Doc required
 	Connection con;
+	
+	//Cons doc required
 	public EmployeeInformation() {
+		//Remove the below auto generated comments.
 		// TODO Auto-generated method stub
 		try{
+		//Intentation required means a tab.
+		//We need to add this to someother place or in a separate class. A new database connection is not required to done every time, DB connection creations are costly and affect performance.
+			//we should load it once in a application and use it ever. Will discuss on this
+			//CAn you explain me in  atext pad what this class.forName does.
 		Class.forName("com.mysql.jdbc.Driver");
 		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shan","root","java");
 		}
@@ -21,11 +35,14 @@ public class EmployeeInformation {
 		}
 	}
 	
+	//Method doc required// Change  method declaration as save(Employee )
 	public void newEmpData(int id, String name, String des, int sal){ 
 		try{
 			
+			//Rname table in db as emloyee
 			String insertQuery = "insert into employeeInfo values(?,?,?,?,?)";			
 			PreparedStatement ps = con.prepareStatement(insertQuery);
+			//Set these attribute in the new Employee class.
 			float bon = (sal*10)/100;
 			ps.setInt(1, id);
 			ps.setString(2, name);
@@ -42,6 +59,8 @@ public class EmployeeInformation {
 
 	}
 	
+	//Method do required
+	//Change fetch(int - Why you used int here? anser me.
 	public void seeEmpData(int id){
 		
 		try{
@@ -59,6 +78,7 @@ public class EmployeeInformation {
 			}
 	}
 	
+	//Method do required. change to fetchAll.
 	public void seeAllEmpData(){
 		
 		try{
